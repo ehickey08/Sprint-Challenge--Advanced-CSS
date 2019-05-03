@@ -1,1 +1,24 @@
 // Navigation code here
+
+.nav-bar{
+    .flex(@direction:column, @justify: space-evenly, @align: space-between);
+    text-align: center;
+    background: @nav-bg;
+    border: 1px solid @nav-border;
+    
+    h1 {
+        padding: 1.25% 0;
+    }
+    nav {
+        .flex(@justify: space-between);
+        margin: 0 auto;
+        min-width: 350px;
+        padding: 1.25% 0;
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: @font-small;
+            white-space: none;
+        }
+    }
+}
