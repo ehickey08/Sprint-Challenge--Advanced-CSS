@@ -169,11 +169,18 @@ p {
   flex-flow: column nowrap;
   align-content: space-between;
   text-align: center;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.6);
   border: 1px solid #F1F1F1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.nav-bar:hover {
+  background: #f6f6f6;
 }
 .nav-bar h1 {
-  padding: 1.25% 0;
+  padding: 20px 0;
 }
 .nav-bar nav {
   display: flex;
@@ -181,8 +188,8 @@ p {
   flex-flow: row nowrap;
   align-content: center;
   margin: 0 auto;
-  min-width: 350px;
-  padding: 1.25% 0;
+  width: 350px;
+  padding-bottom: 10px;
 }
 .nav-bar nav a {
   text-decoration: none;
@@ -199,6 +206,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 110px;
 }
 .home .intro img {
   width: 100%;
