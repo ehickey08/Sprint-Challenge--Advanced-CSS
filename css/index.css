@@ -374,3 +374,72 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.contact {
+  margin-top: 110px;
+}
+.contact h2 {
+  text-align: center;
+  padding-top: 3%;
+}
+.contact legend {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+.contact img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 3%;
+}
+.contact form {
+  padding-top: 5%;
+  text-align: center;
+}
+.contact .address-input {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: space-evenly;
+  height: 125px;
+  width: 80%;
+  margin: 0 auto;
+}
+.contact .address-input input {
+  padding: 5px;
+  border-radius: 10px;
+  width: 30%;
+}
+.contact .payment-info {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-content: center;
+}
+.contact .payment-info .payment-input {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: space-evenly;
+  width: 49%;
+}
+.contact .payment-info .payment-input input {
+  padding: 5px;
+  border-radius: 10px;
+}
+.contact .payment-info span {
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+.contact .payment-info .expiration-input {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-content: center;
+  width: 49%;
+}
+.contact .payment-info .expiration-input select {
+  padding: 5px;
+  border-radius: 10px;
+}
