@@ -34,14 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    An adaptive website is using server-based selective delivery. This would require many templates for each screen type and then a distinct layout would be displayed for the screen size detected. 
+
+    A responsive website is using media-query based delivery. There would be one template with all the content downloaded and the media queries determining which content is layout is displayed. 
+
 2. Describe what it means to be mobile first vs desktop first.
+    Mobile first means you design for the functionality and screen size of mobile devices. This would require you to build min-width media queries to add and layout content for larger screens.
+
+    Desktop first means you design for full-sized screens and build max-width media queries to hide and layout content for smaller devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    Rem is a unit that is relative to the root font size of the html. The default size for browsers is 16px, so a 2.0rem would be 32px. The 'font-size: 62.5%' in the 'html' tag changes the default size to 10px (62.5% of 16); therefore, a 2.0rem would be 20px.
 
 4. How would you describe preprocessing to someone new to CSS?
+    A gift from the heavens! A preprocessor allows you to type more readable and better organized text for your styling. The preprocessor will then compile your input into the proper CSS syntax for your website.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-
+    My favorite is the mixins, in particular the parametric mixins. One of my struggles as a beginner has been remembering all the options for certain CSS properties (i.e. animations, flexbox). I have been using the mixin to write a generic template with the key possible options being the parameters of my mixin. This allows me to see all the possible properties when I call the mixin in my LESS file. 
+    The one giving me the most trouble would be the escaping just because I struggle to find great uses for it outside of media queries. 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
