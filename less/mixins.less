@@ -1,1 +1,27 @@
 // Mixins Here
+
+//Flexbox
+.flex(@justify:center, @wrap: nowrap, @direction: row, @align: center){
+    display: flex;
+    justify-content: @justify;
+    flex-flow: @direction @wrap;
+    align-content: @align;
+}
+
+.button(@font-color: white; @btn-color: black; @font-size: 1.0rem; @btn-width:100px; @border: 10px; @padding:20px){
+    color:@font-color;
+    background: @btn-color;
+    border-radius: @border;
+    padding: @padding;
+    font-size: @font-size;
+    width: @btn-width;
+}
+
+.animation(@animation-name; @duration: 3s; @delay: 2s; @count: infinite; @acceleration: ease; @animation-direction: normal){
+    animation-name: @animation-name;
+    animation-duration: @duration;
+    animation-delay: @delay;
+    animation-iteration-count: @count;
+    animation-timing-function: @acceleration;
+    animation-direction: @animation-direction;
+}

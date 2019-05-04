@@ -1,1 +1,33 @@
 // Navigation code here
+
+.nav-bar{
+    .flex(@direction:column, @justify: space-evenly, @align: space-between);
+    text-align: center;
+    background: rgba(246, 246, 246, 0.6);
+    border: 1px solid @nav-border;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    
+        &:hover{
+            background: rgba(246, 246,246, 1);
+        }
+
+    h1 {
+        padding: 20px 0;
+        .animation(bounce-in, @duration: 3s, @delay: 0s, @count:1);
+    }
+    nav {
+        .flex(@justify: space-between);
+        margin: 0 auto;
+        width: 350px;
+        padding-bottom: 10px;
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: @font-small;
+            white-space: none;
+        }
+    }
+}

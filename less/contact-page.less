@@ -1,0 +1,88 @@
+//Contact Content
+
+.contact {
+    margin-top: 110px;
+
+    h2{
+        text-align: center;
+        padding-top: 3%;
+        
+    }
+    
+    legend{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        font-size: 2.0rem;
+    }  
+
+    img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        padding-top: 3%;
+    }
+    form{
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .address-input{
+        .flex(@wrap: wrap, @direction: column, @align: space-evenly);
+        height: 125px;
+        width: 80%;
+        margin: 0 auto;
+        
+        input{
+            padding: 5px;
+            border-radius: 10px;
+            width: 30%;
+        }
+    }
+
+    .payment-info {
+        .flex(@direction: row);
+    
+            .payment-input{
+                .flex(@wrap: wrap, @direction: column, @align: space-evenly);
+                width: 49%;
+                
+                input{
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+
+            span {
+                text-align: left;
+                font-size: 1.5rem;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .expiration-input{
+                .flex();
+                width: 49%;
+
+                select{
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+
+            
+    
+            }
+    
+    }
+
+    .submit{
+        .button(@btn-font-color, @btn-bg-color, @font-small, @btn-width: 150px);
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+        &:hover {
+            cursor:pointer;
+              color: @btn-bg-color;
+              background: @btn-font-color;
+              box-shadow: 0 0 0 1px @btn-bg-color;
+        }
+    }
+}
